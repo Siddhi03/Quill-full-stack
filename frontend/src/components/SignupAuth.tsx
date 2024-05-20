@@ -37,20 +37,20 @@ export const SignupAuth = ()=>{
                     </div>
                 </div>            
                 <LabelledInput label="Name" placeholder="Siddhi Jain" onChange={(e)=>{
-                    setPostSignupInputs(c=>({
+                    setPostSignupInputs((c : { name: "",email:"",password:""}) =>({
                         ...c,
                         name:e.target.value
                     }))
                 }}/>
                 <LabelledInput label="Email" placeholder="jainsiddhi@gmail.com" onChange={e=>{
-                    setPostSignupInputs(c=>({
+                    setPostSignupInputs((c : { name: "",email:"",password:""})=>({
                         ...c,
                         email: e.target.value
                     }))
                 }} />
 
                 <LabelledInput label="Password" placeholder="123456" type = {"password"} onChange={e=>{
-                    setPostSignupInputs(c=>({
+                    setPostSignupInputs((c : { name: "",email:"",password:""})=>({
                         ...c,
                         password: e.target.value
                     }))
